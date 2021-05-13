@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #B51725;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 26px;
+}
+
+.formContainer {
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+section {
+    padding: 20px;
+    background-image: url(../imagens/people.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 18px;
+}
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    color: white;
+    background-color: #B51725;
+    font-weight: bold;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url(../imagens/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+footer {
+    background-color: #202121;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-height: 220px;     
+}
+.teste {
+    max-width: 420px;
+    max-height: 220px; 
+    margin: auto;
+    /* background-color: red; */
+}
+.picture {
+    width: 170px;
+}
+.description {
+    /* background-color: blue; */
+    /* margin-left: 20px; */
+    text-align: left;
+    float: right;
+    color: white;
+    width: 220px;
+    font-size: 15px;
+}
+.description p, .description h3 {
+    margin-top: 20px;
+}
+.description h3{
+    font-size: 24px;
+    margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+    .formContainer {
+        max-width: none;
+    }
+    .description {
+        font-size: 3.5vw;
+        width: 50%;
+        margin-right: 6%;
+    }
+    .picture {
+        margin-left: 6%;
+        width: 35vw;
+    }
+    .description h3 {
+        font-size: 4;
+    }
+    .description p {
+        margin-top: 5px;
+    }
+    
+}
